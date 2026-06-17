@@ -1,0 +1,108 @@
+body {
+    height: 100vh;
+    background: linear-gradient(to right,rgba(64, 142, 244, 0.2),rgba(185, 152, 243, 0.4),rgba(212, 132, 232, 0.2));
+}
+h1 {
+    text-align: center;
+    margin: 1em;
+}
+nav {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav a {
+    font-size: 1.4em;
+    transition: all;
+    transition-duration: 1s;
+    font-weight: 600;
+}
+nav a:hover {
+    color: rgb(140, 4, 4);
+}
+.row,.values {
+    margin: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+}
+.column,.values article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    min-width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.column:hover,.values article:hover{
+    transform: translateY(-3%);
+    background-color: rgb(161, 161, 236);
+    box-shadow: 0px 10px 30px black;
+}
+.column h2,.column h3 {
+    font-size: 1.8em;
+}
+.testimonials h2 {
+    text-align: center;
+    margin: 1em;
+}
+.testi {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+} 
+footer {
+   margin-top: 3em;
+}
+.history dl dt:before {
+    content: " ";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid black;
+    padding-right: 1em;
+
+}
+.history dl dd:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height:1em;
+    border-left: 1px solid black;
+}
+.history dl dt time {
+    padding-left: 1em;
+    font-weight: 600;
+}
+.history dl dd .desc {
+    padding-left: 3em;
+}
+.mission{
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(to left,rgba(178, 84, 228, 0),rgba(218, 78, 243, 0.2),rgba(200, 113, 241, 0));
+}
+.mission blockquote {
+    margin: 2em;
+}
+.mission blockquote p {
+    font-size: 1.8em;
+    font-style: normal;
+    font-weight: 600;
+}
+.mission blockquote p cite {
+    font-style: italic;
+    font-weight: 500;
+}
+.address {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}

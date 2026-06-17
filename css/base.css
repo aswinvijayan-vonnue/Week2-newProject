@@ -16,3 +16,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1 {
+    color: brown;
+}
+h2 {
+    text-align: center;
+    margin: 2em;
+    font-size: 1.8em;
+}
+p {
+    font-size: 1.3em;
+}
