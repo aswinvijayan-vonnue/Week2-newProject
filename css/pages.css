@@ -1,10 +1,26 @@
 @media screen and (max-width:768px){
-    .row {
+    .row,.values {
         grid-template-columns: 1fr 1fr;
+    }
+    .values article {
+        flex-direction: row;
+        min-height: fit-content;
+    }
+    .services {
+        flex-direction: column;
     }
 }
 @media  screen and (max-width:480px) {
     .row {
         grid-template-columns: 1fr;
     }
+}
+.table-container table thead tr:last-child {
+    position: sticky;
+    top:0;
+    z-index: 100;
+    background-color: #b2d5fa;
+}
+table tbody tr:nth-child(even){
+    background-color: rgb(171, 197, 221);
 }
