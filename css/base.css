@@ -1,5 +1,5 @@
 :root {
-  --color-primary: rgb(12, 12, 12, 1);
+  --color-primary: rgb(12, 12, 12);
   --color-secondary: rgb(102, 12, 12);
   --color-success: rgb(3, 176, 3);
   --color-error: rgb(229, 35, 35);
@@ -19,19 +19,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-*,*::before,*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 h1 {
-    color: brown;
+  color: brown;
 }
+
 h2 {
-    text-align: center;
-    margin: 2em;
-    font-size: 1.8em;
+  text-align: center;
+  margin: 2em;
+  font-size: 1.8em;
 }
+
 p {
-    font-size: 1.3em;
+  font-size: 1.3em;
 }
