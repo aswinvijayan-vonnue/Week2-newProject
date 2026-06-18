@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web page contains multiple files" />
+    <meta name="title" content="page-title" />
+    <meta property="og:title" content="page-title" />
+    <meta property="og:type" content="webpage" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>New Project - Contact</title>
+  </head>
+  <body>
+    <header>
+      <h1>New Project</h1>
+    </header>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html" aria-current="page">Contact</a>
+      <a href="./services.html">Services</a>
+      <a href="./team.html">Team</a>
+    </nav>
+    <main>
+      <h2>Contact Form</h2>
+      <form class="contact-form">
+        <div class="input">
+          <div class="input-cont">
+            <input type="text" id="name" required placeholder=""  />
+            <label for="name" class="lab-cont">Name*</label>
+            </div>
+        </div>
+        <div class="input">
+          <div class="input-cont">
+            <input type="email" id="email" placeholder=" " required />
+            <label for="email">Email*</label>
+
+          </div>
+        </div>
+        <div class="input">
+          <div class="input-cont">
+            <input type="tel" id="phone" required placeholder=""/>
+            <label for="phone">Phone*</label>
+
+          </div>
+        </div>
+        <div class="input">
+          <label for="departments">Department:*</label>
+            <select id="departments">
+              <option value="">Select an option</option>
+              <option value="QA">QA</option>
+              <option value="Department">Department</option>
+              <option value="HR">HR</option>
+              <option value="Accounting">Accounting</option>
+            </select>
+        </div>
+        <div class="input">
+          <label for="notes">Notes:</label>
+          <textarea
+            name="notes"
+            id="notes"
+            rows="5"
+            cols="60"
+            placeholder="Notes"
+          ></textarea>
+        </div>
+        <div class="input">
+          <input type="checkbox" id="newsletter" />
+          <label for="newsletter" id="checkbox-label"
+            >"Yes, I would like to recieve job notifications"</label
+          >
+        </div>
+        <input type="submit" />
+      </form>
+      <div class="map-container">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7813.763914681737!2d76.16290769495743!3d11.702772259875648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba60a24b11ba0b9%3A0x2b07eeabf6d6bc45!2sBatheri%2C%20Kerala%20673596!5e0!3m2!1sen!2sin!4v1780998597598!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Company Location"
+        ></iframe>
+      </div>
+      <address>
+        Apple Investor Relations <br />
+        One Apple Park Way <br />
+        MS 927-4INV <br />
+        Cupertino, CA 95014 USA <br />
+        Phone: 408 974 -3123
+      </address>
+    </main>
+    <footer>
+      <h2>Contact Information</h2>
+      <p>Gmail: <a href="mailto:abc@gmail.com">abc@gmail.com</a></p>
+      <p>Phone No: 9898989898</p>
+    </footer>
+  </body>
+</html>
