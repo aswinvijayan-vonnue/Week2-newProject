@@ -32,6 +32,15 @@
         animation: fade 1.5s;
     }
 }
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 .table-container table thead tr:last-child {
     position: sticky;
     top:0;
