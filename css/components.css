@@ -201,11 +201,11 @@ figure p {
 
 }
 #developer,#qa {
+    display: grid;
+}
+#developer:target + #qa {
     display: none;
 }
-#developer:target {
-    display: grid;
-}
-#qa:target {
-    display: grid;
+#developer:has(+ #qa:target) {
+    display: none;
 }
