@@ -27,6 +27,11 @@
         flex-wrap: wrap;
     }
 }
+@media (prefers-reduced-motion: reduce){
+    main {
+        animation: fade 1.5s;
+    }
+}
 .table-container table thead tr:last-child {
     position: sticky;
     top:0;
