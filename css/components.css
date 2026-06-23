@@ -43,7 +43,7 @@ table caption {
     transition-duration: 2s;
 }
 .form button:hover,.form button:focus-visible,input[type="submit"]:hover,input[type="submit"]:focus-visible{
-   background-color: rgb(128, 217, 147);
+   background-color: var(--color-gray-rgb);
    transform: scale(120%,120%)
 }
 .contact-form{
@@ -84,7 +84,7 @@ table caption {
     text-align: center;
 }
 .contact-form input:focus {
-    background-color: rgb(232, 227, 227);
+    background-color: var(--color-gray-rgb);
 }
 input[type="checkbox"]{
     appearance: none;
@@ -113,7 +113,7 @@ position: relative;
 .input-cont input {
   width: 100%;
   padding: 1em;
-  border: 1px solid #0e0d0d;
+  border: 1px solid var(--color-secondary);
   border-radius: 4px;
   font-size: 16px;
   outline: none;
@@ -124,11 +124,11 @@ position: relative;
     top: 0%;
     font-weight: 600;
     opacity: 1;
-    color: black;
+    color: var(--color-secondary);
 }
 .input-cont input:focus,.input-cont input:not(:placeholder-shown) {
     opacity: 1;
-    border: 1px solid rgb(154, 138, 138);
+    border: 1px solid var(--color-gray-rgb);
 }
 
 /* Base label styling (sitting inside the input field) */
@@ -138,7 +138,7 @@ position: relative;
   top: 50%;
   transform: translate(100%,-50%);
   padding: 0 4px;
-  color: #171414;
+  color: var(--color-secondary);
   transition-property: transform;
   transition-duration: 0.3s;
 }
@@ -146,7 +146,7 @@ position: relative;
     border: 3px solid var(--color-error);
 }
 .input-cont input:user-valid{
-    border: 3px solid green;
+    border: 3px solid var(--color-success);
 }
 figure img {
     width: 300px;
@@ -154,12 +154,12 @@ figure img {
     border-radius: 50%;
 }
 figure {
-    border: 1px solid black;
+    border: 1px solid var(--color-text);
     transition-property: all;
     transition-duration: 0.3s;
 }
 figure:hover {
-    box-shadow: 0 30px 20px rgba(0,0,0,0.4);
+    box-shadow: 0 30px 20px var(--color-text);
     transform: translateY(-5px);
 }
 .icon-links {
@@ -186,7 +186,7 @@ figure p {
 }
 .fa-linkedin,.fa-google,.fa-github {
     font-size: 1.5em;
-    color: black;
+    color: var(--color-text);
 }
 .filter {
     font-size: 1.4em;

@@ -1,7 +1,7 @@
 body {
     overflow-x: hidden;
     height: 100vh;
-    background: linear-gradient(to right,rgba(64, 142, 244, 0.2),rgba(185, 152, 243, 0.4),rgba(212, 132, 232, 0.2));
+    background-color: var(--color-bg);
 }
 h1 {
     text-align: center;
