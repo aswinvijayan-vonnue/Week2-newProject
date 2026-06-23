@@ -7,8 +7,9 @@
     <meta name="title" content="page-title" />
     <meta property="og:title" content="page-title" />
     <meta property="og:type" content="webpage" />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <script src="./darkmode.js" defer></script>
+    <script src="./navigation.js" defer></script>
     <title>New Project - Home</title>
   </head>
   <body>
@@ -16,9 +17,27 @@
       <div class="toggle">
         <button id="checkbox" aria-pressed="false">Toggle dark theme</button>
       </div>
-      <h1>New Project</h1>
+        <h1>New Project</h1>
+        <div id="menu">
+          <button class="hamburger-button" type="button" onclick="opening()">
+        <img
+          src="https://img.icons8.com/?size=100&id=s1My9x8dhHDj&format=png&color=000000"
+          alt="hamburger"
+          id="hamburger-icon"
+        />
+        </button>
+        <div class="nav-drawer" aria-expanded="false">
+          <ul>
+            <li><a href="./index.html" aria-current="page">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./team.html" >Team</a></li>
+          </ul>
+        </div>
+        </div>
     </header>
-    <nav>
+      <nav>
         <a href="./index.html" aria-current="page">Home</a>
         <a href="./about.html">About</a>
         <a href="./contact.html">Contact</a>
@@ -60,39 +79,40 @@
       <section class="testimonials">
         <h2>Testimonials</h2>
         <div class="testi">
-        <blockquote
-          cite="https://www.zendesk.com/in/blog/customer-experience/loyalty/customer-testimonials/"
-        >
-          <p>
-            <cite
-              >We were looking for a marketing partner and a silver tongue media
-              more than delivered.Our social media following doubled in a month
-              and our garage business increased by 50% in just two months.</cite
-            >
-            -Julian Buchanan
-          </p>
-        </blockquote>
-        <blockquote
-          cite="https://www.zendesk.com/in/blog/customer-experience/loyalty/customer-testimonials/"
-        >
-          <p>
-            <cite
-              >I was looking for a first edition book of my dad's birthday and
-              had almost given up</cite
-            >
-            - Alex White
-          </p>
-        </blockquote>
-        <blockquote>
-          <p>
-            <cite
-              >Using Avada has made things so much easier for my team.The
-              interface is highly intutive,which means our staff onboarding took
-              almost no time.
-            </cite>
-            -Sarah M
-          </p>
-        </blockquote>
+          <blockquote
+            cite="https://www.zendesk.com/in/blog/customer-experience/loyalty/customer-testimonials/"
+          >
+            <p>
+              <cite
+                >We were looking for a marketing partner and a silver tongue
+                media more than delivered.Our social media following doubled in
+                a month and our garage business increased by 50% in just two
+                months.</cite
+              >
+              -Julian Buchanan
+            </p>
+          </blockquote>
+          <blockquote
+            cite="https://www.zendesk.com/in/blog/customer-experience/loyalty/customer-testimonials/"
+          >
+            <p>
+              <cite
+                >I was looking for a first edition book of my dad's birthday and
+                had almost given up</cite
+              >
+              - Alex White
+            </p>
+          </blockquote>
+          <blockquote>
+            <p>
+              <cite
+                >Using Avada has made things so much easier for my team.The
+                interface is highly intutive,which means our staff onboarding
+                took almost no time.
+              </cite>
+              -Sarah M
+            </p>
+          </blockquote>
         </div>
       </section>
     </main>

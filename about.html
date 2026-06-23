@@ -7,8 +7,9 @@
     <meta name="title" content="page-title" />
     <meta property="og:title" content="page-title" />
     <meta property="og:type" content="webpage" />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <script src="./darkmode.js" defer></script>
+    <script src="./navigation.js" defer></script>
     <title>New Project- About</title>
   </head>
   <body>
@@ -17,34 +18,64 @@
         <button id="checkbox" aria-pressed="false">Toggle dark theme</button>
       </div>
       <h1>New Project</h1>
+      <div id="menu">
+        <button class="hamburger-button" type="button" onclick="opening()">
+          <img
+            src="https://img.icons8.com/?size=100&id=s1My9x8dhHDj&format=png&color=000000"
+            alt="hamburger"
+            id="hamburger-icon"
+          />
+        </button>
+        <div class="nav-drawer" aria-expanded="false">
+          <ul>
+            <li><a href="./index.html" aria-current="page">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./team.html">Team</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
     <nav>
-        <a href="./index.html" aria-current="page">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
-        <a href="./services.html">Services</a>
-        <a href="./team.html">Team</a>
-      </nav>
+      <a href="./index.html" aria-current="page">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./services.html">Services</a>
+      <a href="./team.html">Team</a>
+    </nav>
     <main>
       <div class="history">
         <h2>History</h2>
         <dl>
           <dt><time datetime="1976">1976</time></dt>
-          <dd><span class="desc">Founded on <time datetime="1974-04-01">April 1, 1976</time> by Steve
-            Jobs,and onald Wayne.</span>
+          <dd>
+            <span class="desc"
+              >Founded on <time datetime="1974-04-01">April 1, 1976</time> by
+              Steve Jobs,and onald Wayne.</span
+            >
           </dd>
           <dt><time datetime="1977">1977</time></dt>
-          <dd><span class="desc">Incorporated as Apple computer Inc and launched the apple II, which
-            became one of the first highly successfull mass produced
-            microcomputers.</span>
+          <dd>
+            <span class="desc"
+              >Incorporated as Apple computer Inc and launched the apple II,
+              which became one of the first highly successfull mass produced
+              microcomputers.</span
+            >
           </dd>
           <dt><time datetime="1997">1997</time></dt>
-          <dd><span class="desc">Facing bankruptcy,Apple acquired NeXT,bringing steve Jobs back to
-            the company as ceo.</span>
+          <dd>
+            <span class="desc"
+              >Facing bankruptcy,Apple acquired NeXT,bringing steve Jobs back to
+              the company as ceo.</span
+            >
           </dd>
           <dt><time datetime="2023">2023</time></dt>
-          <dd><span class="desc">Introduced the Apple Vision Pro,entering the spatial computing
-            market.</span>
+          <dd>
+            <span class="desc"
+              >Introduced the Apple Vision Pro,entering the spatial computing
+              market.</span
+            >
           </dd>
         </dl>
       </div>
@@ -85,21 +116,48 @@
           <h3>Privacy</h3>
           <p>
             Apple designs products to protect personal information, holoding
-            that privacy is a fundamental human right. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quam at ab tempore officia eius omnis sint quidem recusandae vitae. Blanditiis similique minus vitae labore corporis ipsam doloribus accusantium esse quod tempora, a saepe, obcaecati assumenda adipisci veritatis consequatur non impedit deleniti. Illo neque facere sed itaque esse quo, quisquam amet delectus dolore mollitia nulla quaerat vel modi! In repellat animi pariatur beatae nam, cupiditate eligendi fugit nobis reiciendis cumque adipisci aliquam ipsa harum tempore tempora architecto quos natus totam.
+            that privacy is a fundamental human right. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Consequatur quam at ab tempore
+            officia eius omnis sint quidem recusandae vitae. Blanditiis
+            similique minus vitae labore corporis ipsam doloribus accusantium
+            esse quod tempora, a saepe, obcaecati assumenda adipisci veritatis
+            consequatur non impedit deleniti. Illo neque facere sed itaque esse
+            quo, quisquam amet delectus dolore mollitia nulla quaerat vel modi!
+            In repellat animi pariatur beatae nam, cupiditate eligendi fugit
+            nobis reiciendis cumque adipisci aliquam ipsa harum tempore tempora
+            architecto quos natus totam.
           </p>
         </article>
         <article>
           <h3>Environment</h3>
           <p>
             The company is driven to leave the planet better than they found it,
-            committing to strict sustainability and carbon neutral goals. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius obcaecati, eos enim officiis praesentium quas modi veritatis, nulla error impedit repellat dolore molestiae maxime asperiores ut labore! Laudantium labore perspiciatis provident necessitatibus, impedit rerum fugit, dicta repellendus nulla deleniti culpa obcaecati autem natus repellat eos sequi optio ipsam! Saepe exercitationem eum laudantium eaque iusto a enim quia reprehenderit! Quo et eos, nemo amet natus hic fugit pariatur qui odit explicabo vero? Ullam fuga doloribus dolorum. Et id voluptatem necessitatibus temporibus.
+            committing to strict sustainability and carbon neutral goals. Lorem
+            ipsum dolor, sit amet consectetur adipisicing elit. Eius obcaecati,
+            eos enim officiis praesentium quas modi veritatis, nulla error
+            impedit repellat dolore molestiae maxime asperiores ut labore!
+            Laudantium labore perspiciatis provident necessitatibus, impedit
+            rerum fugit, dicta repellendus nulla deleniti culpa obcaecati autem
+            natus repellat eos sequi optio ipsam! Saepe exercitationem eum
+            laudantium eaque iusto a enim quia reprehenderit! Quo et eos, nemo
+            amet natus hic fugit pariatur qui odit explicabo vero? Ullam fuga
+            doloribus dolorum. Et id voluptatem necessitatibus temporibus.
           </p>
         </article>
         <article>
           <h3>Inclusion and diversity</h3>
           <p>
             Apple actively promotes a diverse and inclusive work environment,
-            which helps build better,more just products. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam rerum doloremque molestiae, placeat animi soluta suscipit reiciendis ea necessitatibus! Doloribus fugit eum et itaque hic! Optio tempora ad amet illum excepturi. Possimus aliquam in fugiat aspernatur ab! Commodi itaque debitis, quos nemo dolorem eligendi cupiditate reiciendis delectus repudiandae excepturi omnis ipsum dolore rerum obcaecati neque, ab at accusamus fugit numquam rem! Maxime eos, aspernatur aperiam, natus ex et asperiores quasi illo animi inventore expedita ipsa veritatis aliquid sit, harum aliquam.
+            which helps build better,more just products. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Numquam rerum doloremque
+            molestiae, placeat animi soluta suscipit reiciendis ea
+            necessitatibus! Doloribus fugit eum et itaque hic! Optio tempora ad
+            amet illum excepturi. Possimus aliquam in fugiat aspernatur ab!
+            Commodi itaque debitis, quos nemo dolorem eligendi cupiditate
+            reiciendis delectus repudiandae excepturi omnis ipsum dolore rerum
+            obcaecati neque, ab at accusamus fugit numquam rem! Maxime eos,
+            aspernatur aperiam, natus ex et asperiores quasi illo animi
+            inventore expedita ipsa veritatis aliquid sit, harum aliquam.
           </p>
         </article>
       </div>
