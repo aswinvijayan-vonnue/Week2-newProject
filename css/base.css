@@ -1,0 +1,48 @@
+:root {
+  --color-primary: rgb(12, 12, 12);
+  --color-secondary: rgb(102, 12, 12);
+  --color-success: rgb(3, 176, 3);
+  --color-error: rgb(229, 35, 35);
+  --color-text: black;
+  --color-bg: rgb(255, 255, 255);
+  --color-gray-rgb: rgb(229, 243, 205);
+}
+
+:root[data-theme="dark"] {
+  --color-primary: rgb(241, 230, 230);
+  --color-secondary: rgb(108, 26, 13);
+  --color-text: rgb(238, 238, 246);
+  --color-gray-rgb: rgb(196, 216, 161);
+  --color-bg: rgb(95, 91, 91);
+  --color-success: rgb(3, 176, 3);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: var(--color-secondary);
+}
+
+h2,
+h3,
+h4 {
+  text-align: center;
+  margin: 2em;
+  font-size: 1.8em;
+  color: var(--color-secondary);
+}
+
+p,
+address,
+dt,
+dd,
+label {
+  font-size: 1.3em;
+  color: var(--color-text);
+}
