@@ -9,10 +9,17 @@
     .services {
         flex-direction: column;
     }
+    .testi blockquote{
+        flex: 0 0 45%;
+        box-sizing: border-box;
+    }
 }
 @media  screen and (max-width:480px) {
     .row {
         grid-template-columns: 1fr;
+    }
+    .test{
+        flex-direction: column;
     }
 }
 .table-container table thead tr:last-child {
