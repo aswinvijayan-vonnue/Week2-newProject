@@ -11,6 +11,9 @@
     }
     .developer,.qa{
         grid-template-columns: repeat(2,1fr);
+    .testi blockquote{
+        flex: 0 0 45%;
+        box-sizing: border-box;
     }
 }
 @media  screen and (max-width:480px) {
@@ -25,6 +28,8 @@
     .contact-form .input{
         flex-direction: column;
         flex-wrap: wrap;
+    .test{
+        flex-direction: column;
     }
 }
 .table-container table thead tr:last-child {
