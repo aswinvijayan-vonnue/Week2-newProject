@@ -1,29 +1,21 @@
 :root {
-    --color-primary: rgb(12, 12, 12);
-    --color-secondary: rgb(102, 12, 12);
-    --color-success:rgb(3, 176, 3);
-    --color-error:rgb(229, 35, 35);
-    --color-text:black;
-    --color-bg: rgb(193, 179, 179);
-    
+  --color-primary: rgb(12, 12, 12, 1);
+  --color-secondary: rgb(102, 12, 12);
+  --color-success: rgb(3, 176, 3);
+  --color-error: rgb(229, 35, 35);
+  --color-text: black;
+  --color-bg: rgb(193, 179, 179);
 }
-:root[data-theme="dark"] {
-    --color-text:white;
-    --color-bg:black;
+
+:root[data-theme='dark'] {
+  --color-text: white;
+  --color-bg: black;
 }
-*,*::before,*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-h1 {
-    color: brown;
-}
-h2 {
-    text-align: center;
-    margin: 2em;
-    font-size: 1.8em;
-}
-p {
-    font-size: 1.3em;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
