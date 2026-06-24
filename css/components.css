@@ -1,0 +1,48 @@
+article ul li {
+    font-size: 1.3em;
+    padding: 0.3em;
+    list-style:none;
+    padding-left: 2em;
+    font-weight: 600;
+}
+.services {
+    display: flex;
+    /* margin: 1.6em; */
+    gap: 1em;
+}
+.services article{
+    border: 1px solid black;
+    width: 70%;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.table-container {
+    margin-top: 2em;
+    max-height: 400px;
+    width: 100%;
+}
+.table-container table {
+    height: 300px;
+    width: 70%;
+}
+table caption {
+    font-size: 1.5em;
+}
+.main-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.table-container table tr td:last-child{
+    background-color: rgba(171, 238, 121, 0.3);
+}
+.form button {
+    width: 7em;
+    height: 2.5em;
+    transition-property: all;
+    transition-duration: 2s;
+}
+.form button:hover{
+   background-color: rgb(128, 217, 147);
+   transform: scale(120%,120%)
+}

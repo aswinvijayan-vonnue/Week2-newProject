@@ -1,0 +1,33 @@
+@media screen and (max-width:768px){
+    .row,.values {
+        grid-template-columns: 1fr 1fr;
+    }
+    .values article {
+        flex-direction: row;
+        min-height: fit-content;
+    }
+    .services {
+        flex-direction: column;
+    }
+    .testi blockquote{
+        flex: 0 0 45%;
+        box-sizing: border-box;
+    }
+}
+@media  screen and (max-width:480px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+    .test{
+        flex-direction: column;
+    }
+}
+.table-container table thead tr:last-child {
+    position: sticky;
+    top:0;
+    z-index: 100;
+    background-color: #b2d5fa;
+}
+table tbody tr:nth-child(even){
+    background-color: rgb(171, 197, 221);
+}
