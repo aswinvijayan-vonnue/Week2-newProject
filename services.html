@@ -11,6 +11,19 @@
     <title>New Project- Services</title>
     <script src="./darkmode.js" defer></script>
     <script src="./navigation.js" defer></script>
+    <script src="./search.js" defer></script>
+    <style>
+      .hide{
+        display: none;
+        opacity: 0;
+      }
+      span{
+        background-color: yellow;
+      }
+      #not-found{
+        color: red;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -44,6 +57,11 @@
         <a href="./services.html">Services</a>
         <a href="./team.html">Team</a>
       </nav>
+      <div class="search-div">
+        <label for="search">Search</label>
+        <input type="search" id="search">
+      </div>
+      <p id="not-found" class="hide">Result not found</p>
     <main>
         <div class="main-area">
         <div class="services">

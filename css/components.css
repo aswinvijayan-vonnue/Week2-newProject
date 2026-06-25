@@ -250,3 +250,12 @@ figure p {
     padding-top: 4px;
 
 }
+#search{
+    min-width:250px;
+    min-height: 50px;
+    margin: 1em;
+}
+#search:focus{
+    outline-style: none;
+    font-size: 1.5em;
+}
