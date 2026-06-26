@@ -2,11 +2,14 @@ const searchInput = document.getElementById("search");
 const searchArea = document.querySelector(".services");
 const notFound = document.querySelector("#not-found");
 const oldinnerhtml = searchArea.innerHTML;
+let timer;
 // console.log(oldinnerhtml);
 
 // console.log(article3.textContent);
 searchInput.addEventListener("keyup", (event) => {
-  let current = searchInput.value.trim().toLowerCase();
+  clearTimeout(timer);
+  timer=setTimeout(()=>{
+    let current = searchInput.value.trim().toLowerCase();
   console.log(current);
   if (current === "") {
     searchArea.innerHTML = oldinnerhtml;
@@ -36,5 +39,6 @@ searchInput.addEventListener("keyup", (event) => {
     notFound.classList.add("hide");
   }
 
+  },300);
 
 });
