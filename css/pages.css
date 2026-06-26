@@ -11,6 +11,9 @@
     }
     .developer,.qa{
         grid-template-columns: repeat(2,1fr);
+    .testi blockquote{
+        flex: 0 0 45%;
+        box-sizing: border-box;
     }
 }
 @media  screen and (max-width:480px) {
@@ -40,6 +43,9 @@
   100% {
     opacity: 1;
   }
+    .test{
+        flex-direction: column;
+    }
 }
 .table-container table thead tr:last-child {
     position: sticky;

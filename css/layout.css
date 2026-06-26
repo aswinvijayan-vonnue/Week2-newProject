@@ -55,8 +55,9 @@ nav a:hover {
 }
 .testi {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 3em;
+    flex-wrap: wrap;
 } 
 footer {
    margin-top: 3em;
