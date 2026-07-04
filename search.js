@@ -9,64 +9,66 @@ let timer;
 // const state={
 //   content:window.location.href
 // };
-const state={
-  content:"http://127.0.0.1:5500/services.html"
+const state = {
+  content: "http://127.0.0.1:5500/services.html",
 };
 searchInput.addEventListener("keyup", (event) => {
   clearTimeout(timer);
-  timer=setTimeout(()=>{
+  timer = setTimeout(() => {
     let current = searchInput.value.trim().toLowerCase();
-  console.log(current);
-  if (current === "") {
-    searchArea.innerHTML = oldinnerhtml;
-    notFound.classList.add("hide");
-    return;
-  }
-  history.pushState(state,"Service Page",`?q=${current}`);
-  searchOutput(current);
-  
-
-  },300);
-
+    console.log(current);
+    if (current === "") {
+      searchArea.innerHTML = oldinnerhtml;
+      notFound.classList.add("hide");
+      return;
+    }
+    history.pushState(state, "Service Page", `?q=${current}`);
+    searchOutput(current);
+  }, 300);
 });
-function searchOutput(current){
-  const re=new RegExp(`${current}`,"gi");
+function searchOutput(current) {
+  const re = new RegExp(`${current}`, "gi");
   console.log(re);
-  let newtext=oldinnerhtml.replace(re,`<span>$&</span>`);
+  let newtext = oldinnerhtml.replace(re, `<span>$&</span>`);
   // console.log("After replacing",newtext);
-  searchArea.innerHTML=newtext;
+  searchArea.innerHTML = newtext;
   const servicecards = document.querySelectorAll(".services article");
-  let count=0;
-  servicecards.forEach((article)=>{
-    if(article.textContent.toLowerCase().includes(current)){
-        article.classList.remove("hide");
-        count++;
-    }else{
-        console.log("Not found");
-        article.classList.add("hide");
-        console.log(article);
+  let count = 0;
+  servicecards.forEach((article) => {
+    if (article.textContent.toLowerCase().includes(current)) {
+      article.classList.remove("hide");
+      count++;
+    } else {
+      console.log("Not found");
+      article.classList.add("hide");
+      console.log(article);
     }
   });
-  if(count==0){
+  if (count == 0) {
     notFound.classList.remove("hide");
-  }else{
+  } else {
     notFound.classList.add("hide");
   }
 }
 
-window.addEventListener('popstate',(event)=>{
-  if(event.state){
-    console.log("Navigating to",event.state);
-    const url=new URL(window.location);
-    const urlParams = url.searchParams.get('q');
-    console.log(urlParams);
-    console.log(searchInput);
-    searchInput.value=urlParams;
-    searchOutput(urlParams);
-  }else{
+window.addEventListener("popstate", (event) => {
+  if (event.state) {
+    console.log("Navigating to", event.state);
+    handlePageLoad();
+  } else {
     searchArea.innerHTML = oldinnerhtml;
-    searchInput.value="";
+    searchInput.value = "";
   }
 });
+function handlePageLoad() {
+  const url = new URL(window.location);
+  const urlParams = url.searchParams.get("q");
+  console.log(urlParams);
+  console.log(searchInput);
+ if(urlParams){
+  searchInput.value = urlParams;
+  searchOutput(urlParams);
+ }
+}
+handlePageLoad();
 // history.back();
-
