@@ -36,13 +36,13 @@ table caption {
 .table-container table tr td:last-child{
     background-color: rgba(171, 238, 121, 0.3);
 }
-.form button {
+.form button,input[type="submit"] {
     width: 7em;
     height: 2.5em;
     transition-property: all;
     transition-duration: 2s;
 }
-.form button:hover{
+.form button:hover,.form button:focus-visible,input[type="submit"]:hover,input[type="submit"]:focus-visible{
    background-color: rgb(128, 217, 147);
    transform: scale(120%,120%)
 }

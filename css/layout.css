@@ -43,9 +43,8 @@ nav a:hover {
     transition-duration: 1s;
 }
 .column:hover,.values article:hover,.services article:hover{
-    transform: translateY(-3%);
-    background-color: rgb(185, 185, 237);
-    box-shadow: 0px 10px 30px black;
+    box-shadow: 0 30px 20px rgba(0,0,0,0.4);
+    transform: translateY(-5px);
 }
 .column h2,.column h3 {
     font-size: 1.8em;
