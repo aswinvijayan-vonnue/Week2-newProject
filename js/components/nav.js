@@ -1,9 +1,14 @@
-const nav = document.createElement("nav");
-nav.classList.add("nav-bar");
-nav.innerHTML = `
-<ul>
-<li><a href='#home'>Home</li>
-<li> <a href='#about'>About</li>
-<li> <a href='#contact'>Contact</li>
-</ul>`;
-document.body.appendChild(nav);
+document.addEventListener("DOMContentLoaded", () => {
+  const nav = document.querySelector("nav");
+  console.log("hi",nav);
+//   nav.classList.add("nav-bar");
+  nav.innerHTML = `<a href='./index.html'>Home</a>
+<a href='./about.html'>About</a>
+<a href='./contact.html'>Contact</a>
+<a href='./services.html'>Services</a>
+<a href='./team.html'>Team</a>
+<a href='./gallery.html'>Gallery </a>
+<a href='./blog.html'>Blogs </a>
+ `;
+  console.log(nav);
+});

@@ -80,3 +80,17 @@ table tbody tr:nth-child(even){
     margin-right: 30px;
 
 }
+.visibile{
+    animation: slide 1s ease 1;
+}
+@keyframes slide {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}

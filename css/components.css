@@ -259,3 +259,22 @@ figure p {
     outline-style: none;
     font-size: 1.5em;
 }
+.backto-top-container{
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    z-index: 9999;
+    width: 100px;
+    height: 40px;
+}
+.back-to-top{
+    display: none;
+    width: 100%;
+    height: 100%;
+    font-weight: 900;
+    background-color: black;
+    color: white;
+}
+.back-button{
+    display: block;
+}

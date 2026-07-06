@@ -10,9 +10,14 @@
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./darkmode.js" defer></script>
     <script src="./navigation.js" defer></script>
+    <script src="./js/components/nav.js" defer></script>
+    <script src="./js/scroll-handle.js" defer></script>
     <title>New Project - Home</title>
   </head>
   <body>
+    <div class="backto-top-container">
+        <button class="back-to-top">Back to top</button>
+    </div>
     <header>
       <div class="toggle">
         <button id="checkbox" aria-pressed="false">Toggle dark theme</button>
@@ -38,14 +43,9 @@
         </div>
     </header>
       <nav>
-        <a href="./index.html" aria-current="page">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
-        <a href="./services.html">Services</a>
-        <a href="./team.html">Team</a>
       </nav>
     <main>
-      <section id="three-column">
+      <section id="three-column" class="area">
         <div class="row">
           <div class="column">
             <h2>Column 1</h2>
@@ -76,7 +76,7 @@
           </div>
         </div>
       </section>
-      <section class="testimonials">
+      <section class="testimonials area">
         <h2>Testimonials</h2>
         <div class="testi">
           <blockquote
@@ -116,7 +116,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="area">
       <h2>Contact Information</h2>
       <p>Gmail: <a href="mailto:abc@gmail.com">abc@gmail.com</a></p>
       <p>Phone No: 9898989898</p>

@@ -1,0 +1,87 @@
+.section{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(200px,1fr));
+}
+.container{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+.scroll-lock{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+h1,h2{
+    text-align: center;
+}
+
+.enlargedImg{
+    width: 80%;
+    max-width: 1400px;
+    display: block;
+    position: relative;
+
+}
+nav {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav a {
+    font-size: 1.4em;
+    transition: all;
+    transition-duration: 1s;
+    font-weight: 600;
+}
+nav a:hover {
+    color: rgb(140, 4, 4);
+}
+.container-visible{
+    display: flex;
+}
+.but{
+    min-width: 100px;
+    height: 50px;
+    font-weight: 800;
+    font-size: 2em;
+    margin: 10px;
+    color: white;
+    background-color: black;
+}
+.close-but{
+    min-width: 100px;
+    height: 50px;
+    font-weight: 800;
+    font-size: 2em;
+    align-self: flex-start;
+    margin-top: 7%;
+}
+.backto-top-container{
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    z-index: 9999;
+    width: 100px;
+    height: 40px;
+}
+.back-to-top{
+    display: none;
+    width: 100%;
+    height: 100%;
+    font-weight: 900;
+    background-color: black;
+    color: white;
+}
+.back-button{
+    display: block;
+}
