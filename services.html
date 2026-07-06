@@ -9,10 +9,46 @@
     <meta property="og:type" content="webpage" />
     <link rel="stylesheet" href="./css/main.css">
     <title>New Project- Services</title>
+    <script src="./darkmode.js" defer></script>
+    <script src="./navigation.js" defer></script>
+    <script src="./search.js" defer></script>
+    <style>
+      .hide{
+        display: none;
+        opacity: 0;
+      }
+      span{
+        background-color: yellow;
+      }
+      #not-found{
+        color: red;
+      }
+    </style>
   </head>
   <body>
     <header>
+      <div class="toggle">
+        <button id="checkbox" aria-pressed="false">Toggle dark theme</button>
+      </div>
       <h1>New Project</h1>
+      <div id="menu">
+          <button class="hamburger-button" type="button" onclick="opening()">
+        <img
+          src="https://img.icons8.com/?size=100&id=s1My9x8dhHDj&format=png&color=000000"
+          alt="hamburger"
+          id="hamburger-icon"
+        />
+        </button>
+        <div class="nav-drawer" aria-expanded="false">
+          <ul>
+            <li><a href="./index.html" aria-current="page">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./team.html" >Team</a></li>
+          </ul>
+        </div>
+        </div>
     </header>
     <nav>
         <a href="./index.html" aria-current="page">Home</a>
@@ -21,6 +57,11 @@
         <a href="./services.html">Services</a>
         <a href="./team.html">Team</a>
       </nav>
+      <div class="search-div">
+        <label for="search">Search</label>
+        <input type="search" id="search">
+      </div>
+      <p id="not-found" class="hide">Result not found</p>
     <main>
         <div class="main-area">
         <div class="services">
