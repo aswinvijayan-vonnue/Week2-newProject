@@ -1,9 +1,8 @@
 const nav = document.createElement("nav");
 nav.classList.add("nav-bar");
 nav.innerHTML = `
-<ul>
-<li><a href='#home'>Home</li>
-<li> <a href='#about'>About</li>
-<li> <a href='#contact'>Contact</li>
-</ul>`;
+<a href='#home'>Home</a>
+<a href='#about'>About</a>
+<a href='#contact'>Contact</a>
+`;
 document.body.appendChild(nav);
