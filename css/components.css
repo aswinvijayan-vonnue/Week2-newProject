@@ -6,13 +6,14 @@ article ul li {
     font-weight: 600;
 }
 .services {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
     /* margin: 1.6em; */
     gap: 1em;
 }
 .services article{
     border: 1px solid black;
-    width: 70%;
+    min-width: 250px;
     transition-property: all;
     transition-duration: 1s;
 }
@@ -294,4 +295,13 @@ figure p {
 }
 .show-error{
     color: var(--color-error);
+}
+.retry-button{
+    width: 80px;
+    height: 48px;
+    border-radius: 9999px;
+    display: none;
+}
+.visible{
+    display: block;
 }
