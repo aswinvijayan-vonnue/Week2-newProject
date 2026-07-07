@@ -22,21 +22,28 @@ export async function fetchJSON(url, options = {}) {
 }
 
 export function showToast(message, type, delay) {
-  let container = document.querySelector(".toast-container");
-  if (!container) {
-    container = document.createElement("div");
-    container.classList.add("toast-container");
-    document.body.appendChild(container);
-  }
+  try{
+    let container = document.querySelector(".toast-container");
+  console.log(container);
+  // if (!container) {
+  //   container = document.createElement("div");
+  //   container.classList.add("toast-container");
+  //   document.body.appendChild(container);
+  // }
   const toast = document.createElement("div");
   toast.textContent = `${type}:${message}`;
-  setTimeout(() => {
-    toast.classList.add("show");
-  }, 100);
-  setTimeout(() => {
-    toast.classList.remove("show");
-    setTimeout(() => {
-      toast.remove();
-    }, 100);
-  }, delay);
+  console.log(toast);
+  // container.appendChild(toast);
+  console.log(container);
+  let className=type=="success"? "show-success" : "show-error";
+  container.appendChild(toast);
+  toast.classList.add(className);
+  console.log(container);
+  setTimeout(()=>{
+    toast.remove();
+  },1000);
+}
+  catch(err){
+    console.error(err);
+  }
 }

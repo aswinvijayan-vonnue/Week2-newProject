@@ -60,6 +60,8 @@ table caption {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+    justify-content: center;
+    align-items: center;
 }
 .contact-form .input label {
     width: 100px;
@@ -95,21 +97,27 @@ input[type="checkbox"]:checked + #checkbox-label::before{
     font-size: 16px;
     top: 5px;
 }
-.input input:user-invalid + .error{
+/* .input input:user-invalid + .error{
     display: block;
 
-}
-.error {
+} */
+/* .error {
     color: var(--color-error);
     font-size: 1em;
     text-align: center;
     display: block;
-}
+} */
 .input-cont{
 position: relative;
   margin: 20px 0;
   width: 300px;
 }
+
+.is-invalid{
+    color: var(--color-error);
+    display: block;
+}
+
 .input-cont input {
   width: 100%;
   padding: 1em;
@@ -142,12 +150,7 @@ position: relative;
   transition-property: transform;
   transition-duration: 0.3s;
 }
-.input-cont input:user-invalid{
-    border: 3px solid var(--color-error);
-}
-.input-cont input:user-valid{
-    border: 3px solid var(--color-success);
-}
+
 figure img {
     width: 300px;
     height: 300px;
@@ -277,4 +280,18 @@ figure p {
 }
 .back-button{
     display: block;
+}
+.toast-container{
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+    font-size: 20px;
+    
+}
+.show-success{
+    color: var(--color-success);
+
+}
+.show-error{
+    color: var(--color-error);
 }

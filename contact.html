@@ -9,10 +9,11 @@
     <meta property="og:type" content="webpage" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>New Project - Contact</title>
-    <script src="./darkmode.js" defer></script>
-    <script src="./navigation.js" defer></script>
-    <script src="./js/components/nav.js" defer></script>
-    <script src="./js/scroll-handle.js"></script>
+    <script src="./darkmode.js" type="module"></script>
+    <script src="./navigation.js" type="module"></script>
+    <script src="./js/components/nav.js" type="module"></script>
+    <script src="./js/scroll-handle.js" type="module"></script>
+    <script src="./js/contact-validator.js" type="module"></script>
   </head>
   <body>
     <div class="backto-top-container">
@@ -46,26 +47,29 @@
     </nav>
     <main>
       <h2>Contact Form</h2>
-      <form class="contact-form">
+      <form class="contact-form" novalidate>
         <div class="input">
           <div class="input-cont">
-            <input type="text" id="name" required placeholder=""  />
+            <input type="text" id="name" name="name" required placeholder=""  />
             <label for="name" class="lab-cont">Name*</label>
             </div>
+            <span class="show-error is-invalid"></span>
         </div>
         <div class="input">
           <div class="input-cont">
-            <input type="email" id="email" placeholder=" " required />
+            <input type="email" id="email" name="email" placeholder=" " required />
             <label for="email">Email*</label>
 
           </div>
+          <span class="show-error"></span>
         </div>
         <div class="input">
           <div class="input-cont">
-            <input type="tel" id="phone" required placeholder=""/>
-            <label for="phone">Phone*</label>
+            <input type="tel" name="phone" id="phone" placeholder=""/>
+            <label for="phone">Phone</label>
 
           </div>
+          <span class="show-error"></span>
         </div>
         <div class="input">
           <label for="departments">Department:*</label>
@@ -78,9 +82,9 @@
             </select>
         </div>
         <div class="input">
-          <label for="notes">Notes:</label>
+          <label for="notes">Notes*:</label>
           <textarea
-            name="notes"
+            name="message"
             id="notes"
             rows="5"
             cols="60"
@@ -95,6 +99,8 @@
         </div>
         <input type="submit" />
       </form>
+      <div class="toast-container">
+      </div>
       <div class="map-container">
         <iframe
           class="map"
