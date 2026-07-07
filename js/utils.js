@@ -3,7 +3,7 @@ export function debounce(fn, delay = 300) {
   return (...args) => {
     clearTimeout(timer);
     timer = setTimeout(() => {
-      fn.apply(this.args);
+      fn(...args);
     }, delay);
   };
 }
@@ -21,15 +21,10 @@ export async function fetchJSON(url, options = {}) {
   }
 }
 
-export function showToast(message, type, delay) {
+export function showToast(message, type) {
   try{
     let container = document.querySelector(".toast-container");
   console.log(container);
-  // if (!container) {
-  //   container = document.createElement("div");
-  //   container.classList.add("toast-container");
-  //   document.body.appendChild(container);
-  // }
   const toast = document.createElement("div");
   toast.textContent = `${type}:${message}`;
   console.log(toast);

@@ -1,4 +1,4 @@
-export function darkMode(event) {
+export function darkMode() {
   const isPressed = this.getAttribute("aria-pressed");
   if (isPressed) {
     document.documentElement.setAttribute("data-theme", "light");

@@ -12,7 +12,7 @@ class FormValidator {
     let flag = 0;
     for (let rule in fieldRules) {
       switch (rule) {
-        case "required":
+        case "required":{
           const isRequired = fieldRules[rule];
           if (isRequired && field.value.trim() == "") {
             spanEle.textContent = field.name + " is a required field !";
@@ -20,6 +20,7 @@ class FormValidator {
             flag = 1;
           }
           break;
+        }
         case "min":
           if (field.value.length < fieldRules[rule]) {
             if (!spanEle.classList.contains("is-invalid")) {
@@ -30,7 +31,7 @@ class FormValidator {
             flag = 1;
           }
           break;
-        case "pattern":
+        case "pattern":{
           let isrequired = fieldRules["required"];
           let value = field.value.trim();
           console.log(isrequired);
@@ -44,6 +45,7 @@ class FormValidator {
             flag = 1;
           }
           break;
+        }
       }
       // if(flag==1){
       //     console.log("error got",field);

@@ -19,7 +19,7 @@ export function accordion(selector) {
       }
     });
     item.addEventListener("keydown", (event) => {
-      let nextind = 0;
+      let nextind;
       if (event.key == "ArrowDown") {
         event.preventDefault();
         nextind = (index + 1) % buttons.length;

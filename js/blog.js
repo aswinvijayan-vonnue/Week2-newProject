@@ -35,14 +35,7 @@ function progressUpdate(){
     console.log(`Scrolled ${width}%`);
     bar.style.width=`${width}%`;
 }
-window.addEventListener('scroll',(event)=>{
+window.addEventListener('scroll',()=>{
     requestAnimationFrame(progressUpdate);
 
 });
-function moveTop(event){
-    console.log(event.target);
-    window.scrollTo({
-        top:0,
-        behavior:"smooth"
-    })
-}

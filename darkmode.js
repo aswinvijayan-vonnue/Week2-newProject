@@ -1,5 +1,5 @@
 const toggleElement=document.getElementById("checkbox");
-toggleElement.addEventListener("click",function (event){
+toggleElement.addEventListener("click",function (){
     if(this.ariaPressed==="true"){
         this.ariaPressed=false;
         document.documentElement.setAttribute("data-theme","light");
@@ -11,7 +11,7 @@ toggleElement.addEventListener("click",function (event){
         localStorage.setItem("data-theme","dark");
     }
 });
-window.onload=(event)=>{
+window.onload=()=>{
     let theme=localStorage.getItem("data-theme");
     if(theme==="dark"){
         document.documentElement.setAttribute("data-theme","dark");

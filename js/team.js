@@ -5,9 +5,6 @@ function loadTeamPage() {
   mainSection.classList.add("fetching");
   fetchJSON("https://jsonplaceholder.typicode.com/users")
     .then((response) => {
-      let developers = response.slice(0, 5);
-      let testers = response.slice(5, 10);
-      console.log(testers);
       const developerSection = document.querySelector(".developer");
       const testerSection = document.querySelector(".qa");
       response.forEach((member, index) => {

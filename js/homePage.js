@@ -9,5 +9,5 @@ function callbackfn(entries){
         
     });
 }
-const observer=new IntersectionObserver(callbackfn,options);
+const observer=new IntersectionObserver(callbackfn);
 areas.forEach((area)=>observer.observe(area));

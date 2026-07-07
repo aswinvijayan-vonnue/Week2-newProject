@@ -30,7 +30,7 @@ function nextimg() {
   let ind = galleryState.currentIndex;
   console.log(`arr at ind ${ind}`);
   console.log(arr);
-  if (arr !== []) {
+  if (arr.length >0) {
     ind = ind === arr.length - 1 ? 0 : ind + 1;
     let image = arr[ind];
     let url = image.getAttribute("src");
@@ -42,7 +42,7 @@ function nextimg() {
 function previmg() {
   let arr = galleryState.allImgs;
   let ind = galleryState.currentIndex;
-  if (arr !== []) {
+  if (arr.length>0) {
     ind = ind === 0 ? arr.length - 1 : ind - 1;
     let image = arr[ind];
     let url = image.getAttribute("src");
@@ -61,7 +61,6 @@ document.addEventListener("keydown", (e) => {
   console.log(e.key);
   if (e.key==="Tab") {
     const prev=document.querySelector(".prev");
-    const next=document.querySelector(".next");
     const close=document.querySelector(".close-but");
     if(e.shiftKey){
         if(document.activeElement===prev){

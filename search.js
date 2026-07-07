@@ -41,8 +41,7 @@ function loadContent(){
 const state = {
   content: "http://127.0.0.1:5500/services.html",
 };
-searchInput.addEventListener("keyup", (event) => {
-  console.log("heloooo",searchArea);
+searchInput.addEventListener("keyup", () => {
   clearTimeout(timer);
   console.log("this is the search area", searchArea);
   timer = setTimeout(() => {
