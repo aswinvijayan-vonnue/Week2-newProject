@@ -1,8 +1,21 @@
 console.log("hi");
-let hamButton = document.getElementsByClassName("hamburger-button")[0];
+let hamButton = document.querySelector(".hamburger-button");
 let imageIcon=document.getElementById("hamburger-icon");
-const navbar = document.getElementsByClassName("nav-drawer")[0];
+const navbar = document.querySelector(".nav-drawer");
 console.log(hamButton);
+hamButton.addEventListener('click',opening);
+function opening() {
+  console.log("here");
+  if (navbar.ariaExpanded === "true") {
+    navbar.classList.remove("open");
+    navbar.ariaExpanded = "false";
+    document.body.style.overflow = "visible";
+  } else {
+    navbar.classList.add("open");
+    navbar.ariaExpanded = "true";
+    document.body.style.overflow = "hidden";
+  }
+}
 document.addEventListener("click", (event) => {
   console.log(event.target);
   console.log(event.target);

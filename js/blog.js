@@ -39,3 +39,10 @@ window.addEventListener('scroll',()=>{
     requestAnimationFrame(progressUpdate);
 
 });
+const toTop=document.querySelector('.back-to-top');
+toTop.addEventListener('click',()=>{
+    window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+})
