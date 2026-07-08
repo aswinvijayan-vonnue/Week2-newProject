@@ -1,4 +1,6 @@
 import { accordion } from "./components/accordion.js";
+import { init as darkModeInit } from "./components/darkMode.js";
+import {init as navInit} from "./components/nav.js"
 const idx=sessionStorage.getItem("openat");
 console.log("index",idx);
 if(idx){
@@ -10,4 +12,8 @@ function stayopen(index){
     let panel=buttons[index].nextElementSibling;
     panel.classList.add("active");
 }
-accordion(".header-button");
+window.addEventListener('DOMContentLoaded',()=>{
+    accordion(".header-button");
+    darkModeInit();
+    navInit();
+})

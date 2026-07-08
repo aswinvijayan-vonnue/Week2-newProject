@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
+export function init() {
   const nav = document.querySelector("nav");
-  console.log("hi",nav);
-//   nav.classList.add("nav-bar");
+  console.log("hi", nav);
+  //   nav.classList.add("nav-bar");
   nav.innerHTML = `<a href='./index.html'>Home</a>
 <a href='./about.html'>About</a>
 <a href='./contact.html'>Contact</a>
@@ -10,5 +10,4 @@ document.addEventListener("DOMContentLoaded", () => {
 <a href='./gallery.html'>Gallery </a>
 <a href='./blog.html'>Blogs </a>
  `;
-  console.log(nav);
-});
+}
